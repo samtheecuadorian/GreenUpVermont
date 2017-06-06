@@ -14,6 +14,7 @@ import {
     Text,
     View
 } from 'react-native';
+import App from "./src/app";
 import * as firebase from 'firebase';
 import FireAuth from 'react-native-firebase-auth';
 import logo from './assets/GreenupVermontlogo.png';
@@ -135,25 +136,7 @@ export default class GreenUpVermont extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Image
-                    source={logo}/>
-                <Text style={styles.welcome}>
-                    Welcome to the Green Up Vermont App!
-                </Text>
-                <Text style={styles.instructions}>
-                    Congratulations you got this app running!
-                </Text>
-                <Text style={styles.instructions}>
-                    Double tap R on your keyboard to reload,{'\n'}
-                    Shake or press menu button for dev menu
-                </Text>
-                <Button
-                    onPress={googleLogin}
-                    title="Login with Google"
-                    accessibilityLabel="Login With Google"
-                />
-            </View>
+            <App googleLogin={googleLogin}/>
         );
     }
 }

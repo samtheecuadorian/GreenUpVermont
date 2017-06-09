@@ -271,7 +271,7 @@
     "react/prefer-es6-class": 2, // Prefer es6 class instead of createClass for React Components
     "react/prop-types": 2, // Prevent missing props validation in a React component definition
     "react/react-in-jsx-scope": 2, // Prevent missing React when using JSX
-    "react/require-extension": 2, // Restrict file extensions that may be required
+    "react/extensions": [2, "never", { "png": "always" , "svg": "always", "gif": "always", "json":"always"}], // Restrict file extensions that may be required
     "react/self-closing-comp": 2, // Prevent extra closing tags for components without children
     "react/sort-comp": 2, // Enforce component methods order
     "react/wrap-multilines": 0 // Prevent missing parentheses around multilines JSX

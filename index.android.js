@@ -17,7 +17,7 @@ import {
 import FireAuth from 'react-native-firebase-auth';
 import logo from './assets/GreenupVermontlogo.png';
 
-const onButtonPress = () => {
+function onButtonPress () {
     Alert.alert('Button has been pressed!');
 };
 
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 export default class GreenUpVermont extends Component {
   constructor(props) {
     super(props);
-    FireAuth.init({iosClientId: <IOS_CLIENT_ID>}); // This is the CLIENT_ID found in your Google services plist.
+    FireAuth.init({iosClientId: 'blahblah'}); // This is the CLIENT_ID found in your Google services plist.
   }
 
     render() {
